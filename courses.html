@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Quanskill logo" class="logo-img">
+            </div>
+
+            <div class="profile">
+                <img src="images/avatar.png" alt="Profile" class="avatar-fallback">
+                <div class="profile-info">
+                    <h4>Oluwafemi Samson</h4>
+                    <span>student@gmail.com</span>
+                </div>
+                <span class="profile-arrow">›</span>
+            </div>
+
+            <p class="menu-title">MAIN TOOLS</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/dashboard-icon.svg" alt="" class="menu-icon">
+                            <a href="dashboard.html"><span>Dashboard</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/notifications-icon.svg" alt="" class="menu-icon">
+                            <span>Notifications</span>
+                        </div>
+                        <span class="badge">15</span>
+                    </li>
+                    <li class="menu-item active">
+                        <div class="menu-item-left">
+                            <img src="images/courses-icon.svg" alt="" class="menu-icon">
+                            <a href="courses.html"><span>My Courses</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/browse-icon.svg" alt="" class="menu-icon">
+                            <a href="browse_courses.html"><span>Browse Courses</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/cohort-icon.svg" alt="" class="menu-icon">
+                            <span>Explore Cohort</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/calendar-icon.svg" alt="" class="menu-icon">
+                            <span>Calendar</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/assignments-icon.svg" alt="" class="menu-icon">
+                            <span>Assignments &amp; Quizzes</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/certificates-icon.svg" alt="" class="menu-icon">
+                            <span>Certificates</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/help-icon.svg" alt="" class="menu-icon">
+                            <span>Help &amp; Support</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="menu-title">COMMUNITY &amp; SUPPORT</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/forum-icon.svg" alt="" class="menu-icon">
+                            <span>Discussion Forum</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/support-icon.svg" alt="" class="menu-icon">
+                            <span>Support Center</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="menu-title">SETTINGS</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/payments-icon.svg" alt="" class="menu-icon">
+                            <span>Subscription &amp; Payments</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/settings-icon.svg" alt="" class="menu-icon">
+                            <span>Settings</span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="logout">
+                    <img src="images/logout-icon.svg" alt="" class="menu-icon">
+                    Logout
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="welcome">
+                    <h2>👋 Welcome back, Oluwafemi!</h2>
+                    <p>Ready to level up your skills today? 🚀</p>
+                </div>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search your course...">
+                    </div>
+                    <button class="live-btn"></button>
+                </div>
+            </header>
+
+            <section class="my-courses-hero">
+                <div class="banner-text">
+                    <div class="banner-icon">
+                        <img src="images/book.svg" alt="">
+                    </div>
+                    <div>
+                        <h2>My courses.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Maecenas purus elementum ornare aenean arcu.</p>
+                    </div>
+                </div>
+
+                <div class="course-toolbar">
+                    <div class="toolbar-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search my courses...">
+                    </div>
+
+                    <div class="toolbar-filters">
+                        <div class="filter_1">
+                            <div class="filter_content">
+                            <span>Filter by:</span>
+                            <select>
+                                <option>Recently Accessed</option>
+                                <option>Oldest</option>
+                                <option>Progress</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="filter_2">
+                            <div class="filter_content">
+                        <span>Filter by:</span>
+                        <select>
+                            <option>Categories</option>
+                            <option>Programming</option>
+                            <option>Design</option>
+                            <option>Data Science</option>
+                        </select>
+                        <select>
+                            <option>Progress</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Favorites</option>
+                        </select>
+                        <select>
+                            <option>Instructor</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Favorites</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-courses-grid">
+                <article class="my-course-card">
+                    <div class="my-course-image">
+                        <img src="images/python.png" alt="Python course">
+                    </div>
+                    <div class="my-course-content">
+                        <div class="my-course-top">
+                            <h3>Python Foundation</h3>
+                            <span class="my-course-status">In Progress</span>
+                        </div>
+                        <p>Master Python fundamentals and lay the groundwork for data science.</p>
+                        <div class="my-course-progress">
+                            <div class="progress-bar-track"><div class="progress-fill" style="width: 42%"></div></div>
+                            <div class="progress-text"><span>42%</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="my-course-card">
+                    <div class="my-course-image">
+                        <img src="images/wave.png" alt="Data science course">
+                    </div>
+                    <div class="my-course-content">
+                        <div class="my-course-top">
+                            <h3>Python for Data Science</h3>
+                            <span class="my-course-status">In Progress</span>
+                        </div>
+                        <p>Manipulate and visualize data with essential libraries like NumPy and Pandas.</p>
+                        <div class="my-course-progress">
+                            <div class="progress-bar-track"><div class="progress-fill" style="width: 66%"></div></div>
+                            <div class="progress-text"><span>66%</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="my-course-card">
+                    <div class="my-course-image">
+                        <img src="images/coding.png" alt="Programming course">
+                    </div>
+                    <div class="my-course-content">
+                        <div class="my-course-top">
+                            <h3>Programming Basics</h3>
+                            <span class="my-course-status">Completed</span>
+                        </div>
+                        <p>Build confidence with logic, syntax and the building blocks of software development.</p>
+                        <div class="my-course-progress">
+                            <div class="progress-bar-track"><div class="progress-fill" style="width: 100%"></div></div>
+                            <div class="progress-text"><span>100%</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="my-course-card">
+                    <div class="my-course-image">
+                        <img src="images/python.png" alt="Python course">
+                    </div>
+                    <div class="my-course-content">
+                        <div class="my-course-top">
+                            <h3>Python Foundation</h3>
+                            <span class="my-course-status">In Progress</span>
+                        </div>
+                        <p>Master Python fundamentals and lay the groundwork for data science.</p>
+                        <div class="my-course-progress">
+                            <div class="progress-bar-track"><div class="progress-fill" style="width: 42%"></div></div>
+                            <div class="progress-text"><span>42%</span></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

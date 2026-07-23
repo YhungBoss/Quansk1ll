@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Courses</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+    <div class="logo">
+                <img src="images/logo.svg" alt="Quanskill logo" class="logo-img">
+    </div>
+
+    <div class="profile">
+                <img src="images/avatar.png" alt="Profile" class="avatar-fallback">
+        <div class="profile-info">
+            <h4>Oluwafemi Samson</h4>
+                    <span>student@gmail.com</span>
+        </div>
+                <span class="profile-arrow">›</span>
+    </div>
+
+        <p class="menu-title">MAIN TOOLS</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/dashboard-icon.svg" alt="" class="menu-icon">
+                            <a href="dashboard.html"><span>Dashboard</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/notifications-icon.svg" alt="" class="menu-icon">
+                            <span>Notifications</span>
+                        </div>
+                        <span class="badge">15</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/courses-icon.svg" alt="" class="menu-icon">
+                            <a href="courses.html"><span>My Courses</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item active">
+                        <div class="menu-item-left">
+                            <img src="images/browse-icon.svg" alt="" class="menu-icon">
+                            <a href="browse_courses.html"><span>Browse Courses</span></a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/cohort-icon.svg" alt="" class="menu-icon">
+                            <span>Explore Cohort</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/calendar-icon.svg" alt="" class="menu-icon">
+                            <span>Calendar</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/assignments-icon.svg" alt="" class="menu-icon">
+                            <span>Assignments &amp; Quizzes</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/certificates-icon.svg" alt="" class="menu-icon">
+                            <span>Certificates</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/help-icon.svg" alt="" class="menu-icon">
+                            <span>Help &amp; Support</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        <p class="menu-title">COMMUNITY &amp; SUPPORT</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/forum-icon.svg" alt="" class="menu-icon">
+                            <span>Discussion Forum</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/support-icon.svg" alt="" class="menu-icon">
+                            <span>Support Center</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        <p class="menu-title">SETTINGS</p>
+            <nav class="nav-section">
+                <ul>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/payments-icon.svg" alt="" class="menu-icon">
+                            <span>Subscription &amp; Payments</span>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/settings-icon.svg" alt="" class="menu-icon">
+                            <span>Settings</span>
+                        </div>
+                    </li>
+                </ul>
+                 <button class="logout">
+                    <img src="images/logout-icon.svg" alt="" class="menu-icon">
+                    Logout</button>
+    </nav>
+
+        
+</aside>
+
+        <main class="main-content">
+    <header class="header">
+
+        <div class="welcome">
+            <h2>👋 Welcome back, Oluwafemi!</h2>
+            <p>Ready to level up your skills today? 🚀</p>
+        </div>
+
+        <div class="header-actions">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search your course...">
+            </div>
+
+            <button class="live-btn">
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <section class="browse-banner">
+
+        <div class="banner-text">
+
+            <div class="banner-icon">
+                <img src="images/book.svg" alt="">
+            </div>
+
+            <div>
+
+                <h2>
+                    Explore courses from experienced, real-world experts.
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Maecenas purus elementum ornare aenean arcu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="course-toolbar">
+
+            <div class="toolbar-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search my courses..."
+                >
+
+            </div>
+
+            <div class="toolbar-filters">
+
+            <div class="filter_content">
+
+                <span>Filter by:</span>
+                <select>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                </select>
+                <select>
+                    <option>Recently Added</option>
+                    <option>Recently Added</option>
+                    <option>Recently Added</option>
+                    <option>Recently Added</option>
+                </select>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="courses-grid">
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/python.png">
+
+                <span class="tag">
+                    Beginners
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python Foundation
+                </h3>
+
+                <p>
+                    Master Python fundamentals and lay the groundwork for data science.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/wave.png">
+
+                <span class="tag">
+                    Enthusiasts
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python for Data Science
+                </h3>
+
+                <p>
+                    Manipulate and visualize data with essential libraries like NumPy and Pandas.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/coding.png">
+
+                <span class="tag">
+                    Beginners
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python Foundation
+                </h3>
+
+                <p>
+                    Master Python fundamentals and lay the groundwork for data science.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/python.png">
+
+                <span class="tag">
+                    Beginners
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python Foundation
+                </h3>
+
+                <p>
+                    Master Python fundamentals and lay the groundwork for data science.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/wave.png">
+
+                <span class="tag">
+                    Enthusiasts
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python for Data Science
+                </h3>
+
+                <p>
+                    Manipulate and visualize data with essential libraries like NumPy and Pandas.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/coding.png">
+
+                <span class="tag">
+                    Beginners
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python Foundation
+                </h3>
+
+                <p>
+                    Master Python fundamentals and lay the groundwork for data science.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/python.png">
+
+                <span class="tag">
+                    Beginners
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python Foundation
+                </h3>
+
+                <p>
+                    Master Python fundamentals and lay the groundwork for data science.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="course-card">
+
+            <div class="course-image">
+
+                <img src="images/wave.png">
+
+                <span class="tag">
+                    Enthusiasts
+                </span>
+
+            </div>
+
+            <div class="course-content">
+
+                <h3>
+                    Python for Data Science
+                </h3>
+
+                <p>
+                    Manipulate and visualize data with essential libraries like NumPy and Pandas.
+                </p>
+
+                <div class="course-meta">
+
+                    <span>👤 John Piper and 2 more</span>
+
+                    <span>📄 Course Resources</span>
+
+                    <span>🎓 College Student & Working Professional</span>
+
+                </div>
+
+                <div class="course-footer">
+
+                    <h4>$95.88</h4>
+
+                    <button class="enroll-btn">
+                        Enroll Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+    </div>
+</div>
+</body>
+</html>

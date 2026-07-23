@@ -233,7 +233,6 @@ nav ul {
     cursor: pointer;
 }
 
-/* PROMOTION BANNER */
 .promo-banner {
     background: #3B82F6;
     border-radius: 12px;
@@ -267,24 +266,14 @@ nav ul {
 }
 
 .metric-card{
-
     background:white;
-
     border:1px solid #E8EBF4;
-
     border-radius:16px;
-
     padding:22px;
-
     display:flex;
-
     align-items:center;
-
     gap:18px;
-
-    box-shadow:
-        0 0 0 4px #F8F9FD,
-        0 8px 22px rgba(0,0,0,.05);
+    drop-shadow:0 0 0 4px #E4E5E73D 24%;
 
 }
 
@@ -317,7 +306,6 @@ nav ul {
     margin-top: 2px;
 }
 
-/* CENTRAL CORE WORKSPACE MASONRY GRID */
 .workspace-layout {
     display: grid;
     grid-template-columns: 1fr 340px;
@@ -381,7 +369,6 @@ nav ul {
     font-size: 12px;
 }
 
-/* ENROLLED RECENT COURSE GRID */
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -389,7 +376,7 @@ nav ul {
 }
 
 .course-item {
-    border: 1px solid #F3F4F6;
+    border: 1px solid #E5E7EB;
     border-radius: 10px;
     padding: 12px;
 }
@@ -573,7 +560,6 @@ nav ul {
 .completed-bar { background: #10B981; }
 .pending-bar { background: #F59E0B; }
 
-/* TIME SPENT HISTOGRAM BAR GRAPH */
 .time-summary h2 {
     font-size: 24px;
     font-weight: 700;
@@ -744,7 +730,6 @@ nav ul {
     content: "";
 }
 
-/* RECENT COHORTS SECTION */
 .cohorts-section {
     margin-top: 10px;
 }
@@ -805,7 +790,6 @@ nav ul {
     font-size: 11px;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
 @media (max-width: 1200px) {
     .workspace-layout {
         grid-template-columns: 1fr;
