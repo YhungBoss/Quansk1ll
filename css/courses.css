@@ -578,6 +578,14 @@ button.enroll-btn{
     text-decoration: none;
 }
 
+.menu-item,
+.course-card,
+.enroll-btn,
+.search-box,
+.toolbar-search,
+.my-course-card {
+    transition: all 0.25s ease;
+}
 .toolbar-search {
     display: flex;
     align-items: center;
@@ -866,6 +874,37 @@ button.enroll-btn{
     font-size: 14px;
     font-weight: 800;
     cursor: pointer;
+}
+
+body {
+    opacity: 0;
+    animation: pageFadeIn 0.45s ease forwards;
+}
+
+.dashboard {
+    animation: pageSlideIn 0.45s ease;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1180px) {

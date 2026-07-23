@@ -29,7 +29,7 @@
                     <li class="menu-item">
                         <div class="menu-item-left">
                             <img src="images/dashboard-icon.svg" alt="" class="menu-icon">
-                            <a href="dashboard.html"><span>Dashboard</span></a>
+                            <a href="index.html"><span>Dashboard</span></a>
                         </div>
                     </li>
                     <li class="menu-item">
@@ -267,5 +267,15 @@
             </section>
         </main>
     </div>
+
+    <script>
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transform = 'translateY(8px)';
+            document.body.style.transition = 'all 0.3s ease';
+        });
+    });
+</script>
 </body>
 </html>

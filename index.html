@@ -370,5 +370,15 @@
         </main>
     </div>
 </div>
+
+<script>
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transform = 'translateY(8px)';
+            document.body.style.transition = 'all 0.3s ease';
+        });
+    });
+</script>
 </body>
 </html>
