@@ -247,11 +247,9 @@ nav ul {
     padding:0 20px 0 42px;
     border:none;
     border-radius:12px;
-    background:#FFF7ED;
     background-image:url('../images/live-icon.svg');
     background-repeat:no-repeat;
     background-position:left 14px center;
-    color:#EA580C;
     font-size:14px;
     font-weight:800;
     cursor:pointer;
@@ -327,7 +325,6 @@ nav ul {
     background:#dfdbdb;
     padding:3px 6px;
     border-radius:8px;
-    border:1px solid #4f505172;
 }
 .browse-banner{
     position:relative;
