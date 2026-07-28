@@ -18,7 +18,39 @@ body {
     background: #FFFFFF;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(17,24,39,.06);
+    position: relative;
+    min-height: 100vh;
 }
+
+.mobile-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    background: #FFF;
+    color: #111827;
+    font-size: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.sidebar-overlay {
+    display: none;
+}
+
+.main-content {
+    flex: 1;
+    background:#F6F8FC;
+    padding: 22px 26px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
 
 .sidebar{
 
@@ -28,6 +60,8 @@ body {
     padding: 24px 18px 20px;
     display: flex;
     flex-direction: column;
+    border-right:1px solid rgba(255,255,255,.08);
+    border-radius:0 20px 20px 0;
 }
 
 .logo {
@@ -273,7 +307,7 @@ nav ul {
     display:flex;
     align-items:center;
     gap:18px;
-    drop-shadow:0 0 0 4px #E4E5E73D 24%;
+    box-shadow:0 0 0 4px #E4E5E73D;
 
 }
 
@@ -797,22 +831,82 @@ nav ul {
     .metrics-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .cohorts-grid {
+    .courses-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .dashboard {
         flex-direction: column;
+        min-height: 100vh;
+        position: relative;
     }
+
+    .sidebar-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.45);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+        z-index: 40;
+    }
+
+    .dashboard.is-sidebar-open .sidebar-overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 50;
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+        min-height: 100vh;
+        box-shadow: 20px 0 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .dashboard.is-sidebar-open .sidebar {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .header-actions {
         width: 100%;
+        flex-wrap: wrap;
     }
-    .courses-grid {
-        grid-template-columns: 1fr;
+
+    .search {
+        width: 100%;
+        max-width: none;
     }
+
+    .promo-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
     .analytics-grid {
         grid-template-columns: 1fr;
+        min-height: auto;
     }
 }

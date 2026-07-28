@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
 <div class="app">
         <div class="dashboard">
+        <div class="sidebar-overlay"></div>
         <aside class="sidebar">
     <div class="logo">
                 <img src="images/logo.svg" alt="Quanskill logo" class="logo-img">
@@ -129,9 +132,12 @@
 
         <main class="main-content">
             <header class="header">
-                <div class="welcome">
-                    <h2>👋 Welcome back, Oluwafemi!</h2>
-                    <p>Ready to level up your skills today?🚀</p>
+                <div class="header-title-group">
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+                    <div class="welcome">
+                        <h2>👋 Welcome back, Oluwafemi!</h2>
+                        <p>Ready to level up your skills today?🚀</p>
+                    </div>
                 </div>
                 <div class="header-actions">
                     <div class="search-container">
@@ -355,29 +361,45 @@
                         </div>
                         <div class="countdown-timer"><span>12</span>:<span>03</span>:<span>40</span></div>
                     </div>
-                    <div class="cohort-card">
-                        <div class="cohort-thumb"></div>
-                        <div class="cohort-info">
-                            <span class="tag">Programming</span><span class="author"> • By Admin</span>
-                            <h4>Summer 2025 Neutral Language Processing</h4>
-                            <p>📅 May 29, 2025 &nbsp; 🕒 09:00 AM - 12:00 PM</p>
-                        </div>
-                        <div class="countdown-timer"><span>12</span>:<span>03</span>:<span>40</span></div>
-                    </div>
+                    
                 </div>
             </div>
 
         </main>
     </div>
 </div>
-
 <script>
-    document.querySelectorAll('a').forEach(link => {
+    const dashboard = document.querySelector('.dashboard');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const overlay = document.querySelector('.sidebar-overlay');
+
+    const closeSidebar = () => {
+        dashboard?.classList.remove('is-sidebar-open');
+        toggle?.setAttribute('aria-expanded', 'false');
+    };
+
+    toggle?.addEventListener('click', () => {
+        const isOpen = dashboard?.classList.toggle('is-sidebar-open');
+        toggle?.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    overlay?.addEventListener('click', closeSidebar);
+    dashboard?.querySelectorAll('.sidebar a, .sidebar button, .sidebar .menu-item').forEach((element) => {
+        element.addEventListener('click', closeSidebar);
+    });
+
+    document.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
             document.body.style.opacity = '0';
             document.body.style.transform = 'translateY(8px)';
             document.body.style.transition = 'all 0.3s ease';
         });
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+            closeSidebar();
+        }
     });
 </script>
 </body>
